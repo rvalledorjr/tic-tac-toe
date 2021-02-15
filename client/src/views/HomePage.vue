@@ -4,7 +4,7 @@
       <h2 class="text-3xl text-center">You</h2>
       <div class="px-5 flex items-center">
         <gravatar
-          :email="userPlayer.name"
+          :email="userPlayer.gravatarData"
           :size="50"
           class="rounded-full"
         ></gravatar>
@@ -27,7 +27,7 @@
         <li v-for="(player, i) in players" :key="i" class="mb-3">
           <div class="flex items-center">
             <gravatar
-              :email="player.name"
+              :email="player.gravatarData"
               :size="50"
               class="rounded-full"
             ></gravatar>
